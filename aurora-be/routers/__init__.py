@@ -1,4 +1,4 @@
-"""Aurora Routers"""
+"""Aurora routers package"""
 
 from . import users
 
