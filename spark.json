@@ -1,0 +1,56 @@
+{
+  "name": "aurora",
+  "version": "0.1.0",
+  "description": "User management and pre-registration module",
+  "type": "module",
+  
+  "targets": ["infinity", "matrix"],
+  
+  "backend": {
+    "framework": "fastapi",
+    "source": "aurora-be",
+    "target": "matrix/src/modules/aurora",
+    "entrypoint": "router:router",
+    "port": 8003,
+    "health": "/health"
+  },
+  
+  "frontend": {
+    "framework": "vue",
+    "source": "aurora-fe",
+    "target": "infinity/src/aurora",
+    "components": "aurora-fe/components",
+    "stores": "aurora-fe/stores",
+    "composables": "aurora-fe/composables"
+  },
+  
+  "database": {
+    "type": "postgresql",
+    "migrations": "aurora-be/migrations",
+    "models": "aurora-be/models"
+  },
+  
+  "dependencies": {
+    "services": ["guardian", "mentor"],
+    "modules": []
+  },
+  
+  "routes": {
+    "prefix": "/api/v1/aurora",
+    "middleware": ["auth", "tenant-context"]
+  },
+  
+  "exports": {
+    "stores": [
+      "useUserStore"
+    ],
+    "composables": [
+      "useUserContext"
+    ],
+    "components": [
+      "UserManager",
+      "UserList",
+      "UserForm"
+    ]
+  }
+}
