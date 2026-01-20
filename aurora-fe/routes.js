@@ -9,7 +9,7 @@ export default [
   {
     path: '/users',
     name: 'aurora-users',
-    component: () => import('./views/UserList.vue'),
+    component: () => import('@/views/aurora/UserList.vue'),
     meta: {
       requiresAuth: true,
       permission: 'aurora:users:read'
@@ -18,7 +18,7 @@ export default [
   {
     path: '/users/new',
     name: 'aurora-user-create',
-    component: () => import('./views/UserForm.vue'),
+    component: () => import('@/views/aurora/UserForm.vue'),
     meta: {
       requiresAuth: true,
       permission: 'aurora:users:create'
@@ -27,7 +27,7 @@ export default [
   {
     path: '/users/:id',
     name: 'aurora-user-detail',
-    component: () => import('./views/UserDetail.vue'),
+    component: () => import('@/views/aurora/UserDetail.vue'),
     meta: {
       requiresAuth: true,
       permission: 'aurora:users:read'
@@ -36,7 +36,7 @@ export default [
   {
     path: '/users/:id/edit',
     name: 'aurora-user-edit',
-    component: () => import('./views/UserForm.vue'),
+    component: () => import('@/views/aurora/UserForm.vue'),
     meta: {
       requiresAuth: true,
       permission: 'aurora:users:update'
