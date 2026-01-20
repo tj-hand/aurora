@@ -8,7 +8,7 @@
 import { onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useGuardianStore } from '@/stores/guardian'
-import UserManager from '../components/ui/UserManager.vue'
+import UserManager from '@/aurora/components/UserManager.vue'
 
 const router = useRouter()
 const guardian = useGuardianStore()

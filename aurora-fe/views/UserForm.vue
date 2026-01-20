@@ -8,8 +8,8 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useGuardianStore } from '@/stores/guardian'
-import { useUserStore } from '../stores/userStore'
-import type { User, UserCreate, UserUpdate, UserLevel } from '../stores/types'
+import { useUserStore } from '@/stores/userStore'
+import type { User, UserCreate, UserUpdate, UserLevel } from '@/stores/types'
 
 const router = useRouter()
 const route = useRoute()
