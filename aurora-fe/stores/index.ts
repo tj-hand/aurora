@@ -10,5 +10,8 @@
 // User store
 export { useUserStore } from './userStore';
 
+// Invitation store
+export { useInvitationStore } from './invitations';
+
 // Re-export types
 export * from './types';

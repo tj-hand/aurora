@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>You're Invited</title>
+    <!--
+    Aurora Invitation Email Template
+
+    Variables:
+    - {{ invitee_name }}: Name of the person being invited (optional)
+    - {{ inviter_email }}: Email of the person who sent the invitation
+    - {{ tenant_name }}: Name of the tenant/organization
+    - {{ invitation_url }}: Full URL for accepting the invitation
+    - {{ custom_message }}: Custom message from the inviter (optional)
+    - {{ expires_date }}: Formatted expiration date
+    -->
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+        table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+        img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+
+        /* Base styles */
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f4f4f5;
+        }
+
+        /* Container */
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 40px 20px 20px;
+            background-color: #ffffff;
+        }
+
+        .header h1 {
+            color: #2563eb;
+            margin: 0;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        /* Content */
+        .content {
+            padding: 20px 40px 40px;
+            background-color: #ffffff;
+        }
+
+        .content p {
+            margin: 0 0 16px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .highlight-box {
+            background-color: #f8fafc;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+
+        .custom-message {
+            font-style: italic;
+            color: #64748b;
+            padding: 16px;
+            background-color: #f1f5f9;
+            border-left: 4px solid #2563eb;
+            margin: 24px 0;
+        }
+
+        /* CTA Button */
+        .cta-container {
+            text-align: center;
+            margin: 32px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #2563eb;
+            color: #ffffff !important;
+            padding: 14px 36px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 16px;
+            transition: background-color 0.2s;
+        }
+
+        .cta-button:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Expiration notice */
+        .expiration {
+            color: #64748b;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 24px 20px;
+            color: #94a3b8;
+            font-size: 12px;
+            background-color: #f8fafc;
+        }
+
+        .footer a {
+            color: #64748b;
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 600px) {
+            .content {
+                padding: 20px !important;
+            }
+
+            .header h1 {
+                font-size: 24px !important;
+            }
+
+            .cta-button {
+                padding: 12px 24px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr>
+            <td style="padding: 20px 0;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="email-container" style="margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+
+                    <!-- Header -->
+                    <tr>
+                        <td class="header">
+                            <h1>You're Invited!</h1>
+                        </td>
+                    </tr>
+
+                    <!-- Content -->
+                    <tr>
+                        <td class="content">
+                            <p>Hi{{ invitee_name }},</p>
+
+                            <div class="highlight-box">
+                                <p style="margin-bottom: 8px;">
+                                    <strong>{{ inviter_email }}</strong> has invited you to join
+                                    <strong>{{ tenant_name }}</strong>.
+                                </p>
+                            </div>
+
+                            <!-- Custom message (if provided) -->
+                            {{ custom_message_block }}
+
+                            <div class="cta-container">
+                                <a href="{{ invitation_url }}" class="cta-button">
+                                    Accept Invitation
+                                </a>
+                            </div>
+
+                            <p class="expiration">
+                                This invitation will expire on <strong>{{ expires_date }}</strong>.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td class="footer">
+                            <p>If you didn't expect this invitation, you can safely ignore this email.</p>
+                            <p>Questions? Contact us at <a href="mailto:support@example.com">support@example.com</a></p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
