@@ -1,0 +1,138 @@
+{
+  "aurora": {
+    "actions": {
+      "invitations": {
+        "view": {
+          "name": "Visualizar Convites",
+          "description": "Visualizar lista e detalhes dos convites"
+        },
+        "create": {
+          "name": "Criar Convites",
+          "description": "Criar e reenviar convites"
+        },
+        "revoke": {
+          "name": "Revogar Convites",
+          "description": "Revogar convites pendentes"
+        }
+      }
+    },
+    "dashboard": {
+      "title": "Convites",
+      "subtitle": "Gerenciar convites de usuários",
+      "no_invitations": "Nenhum convite encontrado",
+      "loading": "Carregando convites...",
+      "error": "Falha ao carregar convites"
+    },
+    "stats": {
+      "title": "Estatísticas",
+      "total": "Total",
+      "pending": "Pendentes",
+      "accepted": "Aceitos",
+      "expired": "Expirados",
+      "revoked": "Revogados",
+      "sent_today": "Enviados Hoje",
+      "sent_this_week": "Enviados Esta Semana"
+    },
+    "filter": {
+      "title": "Filtrar Convites",
+      "status": "Status",
+      "email": "Email",
+      "invited_by": "Convidado Por",
+      "date_range": "Período",
+      "created_after": "Criado Após",
+      "created_before": "Criado Antes",
+      "apply": "Aplicar Filtros",
+      "clear": "Limpar Filtros",
+      "active_filters": "{{count}} filtro(s) ativo(s)"
+    },
+    "status": {
+      "PENDING": "Pendente",
+      "ACCEPTED": "Aceito",
+      "EXPIRED": "Expirado",
+      "REVOKED": "Revogado"
+    },
+    "create": {
+      "title": "Convidar Usuário",
+      "email": "Endereço de Email",
+      "email_placeholder": "usuario@exemplo.com",
+      "name": "Nome de Exibição",
+      "name_placeholder": "João Silva (opcional)",
+      "clients": "Atribuir a Clientes",
+      "clients_placeholder": "Selecionar clientes...",
+      "roles": "Atribuir Grupos de Papéis",
+      "roles_placeholder": "Selecionar grupos de papéis...",
+      "message": "Mensagem Pessoal",
+      "message_placeholder": "Adicione uma mensagem de boas-vindas (opcional)",
+      "submit": "Enviar Convite",
+      "submitting": "Enviando...",
+      "success": "Convite enviado com sucesso",
+      "error": "Falha ao enviar convite"
+    },
+    "detail": {
+      "title": "Detalhes do Convite",
+      "id": "ID",
+      "email": "Email",
+      "name": "Nome",
+      "status": "Status",
+      "tenant": "Tenant",
+      "clients": "Clientes Atribuídos",
+      "roles": "Papéis Atribuídos",
+      "invited_by": "Convidado Por",
+      "created_at": "Criado",
+      "expires_at": "Expira",
+      "accepted_at": "Aceito",
+      "revoked_at": "Revogado",
+      "revoked_by": "Revogado Por",
+      "message": "Mensagem",
+      "no_clients": "Nenhum cliente atribuído",
+      "no_roles": "Nenhum papel atribuído",
+      "no_message": "Sem mensagem"
+    },
+    "actions_menu": {
+      "resend": "Reenviar Email",
+      "revoke": "Revogar Convite",
+      "view": "Ver Detalhes"
+    },
+    "resend": {
+      "confirm_title": "Reenviar Convite",
+      "confirm_message": "Um novo email de convite será enviado para {{email}}. O link de convite será regenerado.",
+      "confirm_button": "Reenviar",
+      "success": "Email de convite reenviado",
+      "error": "Falha ao reenviar convite"
+    },
+    "revoke": {
+      "confirm_title": "Revogar Convite",
+      "confirm_message": "Tem certeza que deseja revogar o convite para {{email}}? Esta ação não pode ser desfeita.",
+      "confirm_button": "Revogar",
+      "success": "Convite revogado",
+      "error": "Falha ao revogar convite"
+    },
+    "accept": {
+      "title": "Aceitar Convite",
+      "loading": "Verificando convite...",
+      "expired": "Este convite expirou",
+      "invalid": "Link de convite inválido",
+      "already_accepted": "Este convite já foi aceito",
+      "revoked": "Este convite foi revogado",
+      "success_title": "Bem-vindo!",
+      "success_message": "Você entrou com sucesso em {{tenant}}",
+      "continue": "Continuar para o Dashboard",
+      "error": "Falha ao aceitar convite"
+    },
+    "pagination": {
+      "page": "Página",
+      "of": "de",
+      "showing": "Mostrando",
+      "entries": "convites",
+      "previous": "Anterior",
+      "next": "Próxima",
+      "first": "Primeira",
+      "last": "Última"
+    },
+    "empty_state": {
+      "title": "Sem Convites",
+      "description": "Você ainda não enviou nenhum convite",
+      "action": "Convidar Usuário"
+    }
+  }
+}

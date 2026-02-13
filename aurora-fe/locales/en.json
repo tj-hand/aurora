@@ -1,0 +1,138 @@
+{
+  "aurora": {
+    "actions": {
+      "invitations": {
+        "view": {
+          "name": "View Invitations",
+          "description": "View invitation list and details"
+        },
+        "create": {
+          "name": "Create Invitations",
+          "description": "Create and resend invitations"
+        },
+        "revoke": {
+          "name": "Revoke Invitations",
+          "description": "Revoke pending invitations"
+        }
+      }
+    },
+    "dashboard": {
+      "title": "Invitations",
+      "subtitle": "Manage user invitations",
+      "no_invitations": "No invitations found",
+      "loading": "Loading invitations...",
+      "error": "Failed to load invitations"
+    },
+    "stats": {
+      "title": "Statistics",
+      "total": "Total",
+      "pending": "Pending",
+      "accepted": "Accepted",
+      "expired": "Expired",
+      "revoked": "Revoked",
+      "sent_today": "Sent Today",
+      "sent_this_week": "Sent This Week"
+    },
+    "filter": {
+      "title": "Filter Invitations",
+      "status": "Status",
+      "email": "Email",
+      "invited_by": "Invited By",
+      "date_range": "Date Range",
+      "created_after": "Created After",
+      "created_before": "Created Before",
+      "apply": "Apply Filters",
+      "clear": "Clear Filters",
+      "active_filters": "{{count}} active filter(s)"
+    },
+    "status": {
+      "PENDING": "Pending",
+      "ACCEPTED": "Accepted",
+      "EXPIRED": "Expired",
+      "REVOKED": "Revoked"
+    },
+    "create": {
+      "title": "Invite User",
+      "email": "Email Address",
+      "email_placeholder": "user@example.com",
+      "name": "Display Name",
+      "name_placeholder": "John Doe (optional)",
+      "clients": "Assign to Clients",
+      "clients_placeholder": "Select clients...",
+      "roles": "Assign Role Groups",
+      "roles_placeholder": "Select role groups...",
+      "message": "Personal Message",
+      "message_placeholder": "Add a personal welcome message (optional)",
+      "submit": "Send Invitation",
+      "submitting": "Sending...",
+      "success": "Invitation sent successfully",
+      "error": "Failed to send invitation"
+    },
+    "detail": {
+      "title": "Invitation Details",
+      "id": "ID",
+      "email": "Email",
+      "name": "Name",
+      "status": "Status",
+      "tenant": "Tenant",
+      "clients": "Assigned Clients",
+      "roles": "Assigned Roles",
+      "invited_by": "Invited By",
+      "created_at": "Created",
+      "expires_at": "Expires",
+      "accepted_at": "Accepted",
+      "revoked_at": "Revoked",
+      "revoked_by": "Revoked By",
+      "message": "Message",
+      "no_clients": "No clients assigned",
+      "no_roles": "No roles assigned",
+      "no_message": "No message"
+    },
+    "actions_menu": {
+      "resend": "Resend Email",
+      "revoke": "Revoke Invitation",
+      "view": "View Details"
+    },
+    "resend": {
+      "confirm_title": "Resend Invitation",
+      "confirm_message": "A new invitation email will be sent to {{email}}. The invitation link will be regenerated.",
+      "confirm_button": "Resend",
+      "success": "Invitation email resent",
+      "error": "Failed to resend invitation"
+    },
+    "revoke": {
+      "confirm_title": "Revoke Invitation",
+      "confirm_message": "Are you sure you want to revoke the invitation for {{email}}? This action cannot be undone.",
+      "confirm_button": "Revoke",
+      "success": "Invitation revoked",
+      "error": "Failed to revoke invitation"
+    },
+    "accept": {
+      "title": "Accept Invitation",
+      "loading": "Verifying invitation...",
+      "expired": "This invitation has expired",
+      "invalid": "Invalid invitation link",
+      "already_accepted": "This invitation has already been accepted",
+      "revoked": "This invitation has been revoked",
+      "success_title": "Welcome!",
+      "success_message": "You've successfully joined {{tenant}}",
+      "continue": "Continue to Dashboard",
+      "error": "Failed to accept invitation"
+    },
+    "pagination": {
+      "page": "Page",
+      "of": "of",
+      "showing": "Showing",
+      "entries": "invitations",
+      "previous": "Previous",
+      "next": "Next",
+      "first": "First",
+      "last": "Last"
+    },
+    "empty_state": {
+      "title": "No Invitations",
+      "description": "You haven't sent any invitations yet",
+      "action": "Invite User"
+    }
+  }
+}
